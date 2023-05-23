@@ -1,4 +1,9 @@
 import discord
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
 
 class BotClient(discord.Client):
@@ -13,4 +18,4 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 client = BotClient(intents=intents)
-client.run("DISCORD_BOT_TOKEN")
+client.run(DISCORD_TOKEN)
