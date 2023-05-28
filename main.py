@@ -6,6 +6,10 @@ load_dotenv()
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
 
+def get_bard_message(message):
+    pass
+
+
 class BotClient(discord.Client):
     async def on_ready(self):
         print(f'Logged on as {self.user}!')
