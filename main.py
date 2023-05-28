@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
+BARD_SESSION_ID = os.getenv("BARD_SESSION_ID")
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
 
